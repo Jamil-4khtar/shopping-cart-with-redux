@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    width: 94vw;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li:hover {
+    color: #ff6347;
+}
+
+.navbar-links li:last-child {
+    font-weight: bold;
+}

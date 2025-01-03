@@ -1,0 +1,137 @@
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cart-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item-image:hover {
+    transform: scale(1.1);
+}
+
+.item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.item-name {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #666;
+}
+
+.item-actions {
+    display: flex;
+    align-items: center;
+}
+
+.increase-btn, .decrease-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.increase-btn:hover, .decrease-btn:hover {
+    background-color: #0056b3;
+}
+
+.item-quantity {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 20px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cart-total .total-label {
+    font-weight: bold;
+}
+
+.cart-total .total-amount {
+    color: #007bff;
+    font-weight: bold;
+}
